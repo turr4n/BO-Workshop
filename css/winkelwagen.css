@@ -1,0 +1,341 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%
+}
+
+header {
+    background: purple;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+}
+
+
+.headerText {
+    display: flex;
+    gap: 4rem;
+    padding-right: 2rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.headerText>a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.headerText>a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.headerText>a:hover {
+    text-decoration: underline;
+    color: gold;
+}
+
+.webLogo {
+    width: 20rem;
+    height: 90%;
+}
+
+.headerIMG {
+    padding-left: 7rem;
+}
+
+@media screen and (max-width: 45rem) {
+    .logo {
+        width: 19rem;
+        height: 4rem;
+    }
+
+    a {
+        font-size: 1.1rem;
+    }
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(19, 1fr);
+    grid-template-rows: repeat(19, 1fr);
+}
+
+.product {
+    list-style: none;
+    padding: 3rem;
+    border-radius: 0rem;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+
+.parfum-1 {
+    position: flex;
+    padding-top: 5rem;
+    font-size: 4rem;
+}
+
+.parfum-2 {
+    position: flex;
+    padding-top: 5rem;
+    font-size: 4rem;
+}
+
+.parfum-3 {
+    position: flex;
+    padding-top: 5rem;
+    font-size: 4rem;
+}
+
+.parfum-4 {
+    position: flex;
+    padding-top: 5rem;
+    font-size: 4rem;
+}
+
+.product1 {
+    grid-column: 5/16;
+    grid-row: 3/5;
+    background: rgb(255, 255, 255);
+    outline: purple solid;
+    color: purple;
+    text-align: left;
+}
+
+.product2 {
+    grid-column: 5/16;
+    grid-row: 7/9;
+    background: rgb(255, 255, 255);
+    outline: purple solid;
+    color: purple;
+    text-align: left;
+}
+
+.product3 {
+    grid-column: 5/16;
+    grid-row: 11/13;
+    background: rgb(255, 255, 255);
+    outline: purple solid;
+    color: purple;
+    text-align: left;
+}
+
+.product4 {
+    grid-column: 5/16;
+    grid-row: 15/17;
+    background: rgb(255, 255, 255);
+    outline: purple solid;
+    color: purple;
+    text-align: left;
+}
+
+
+
+.parfumFoto-1 {
+    margin-left: 0rem;
+    position: flex;
+    width: 13rem;
+    height: 13rem;
+    margin-left: 0%;
+    text-align: left;
+    float: left;
+}
+
+
+
+.parfumFoto-2 {
+    margin-left: 0rem;
+    position: flex;
+    width: 13rem;
+    height: 13rem;
+    margin-left: 0%;
+    text-align: left;
+    float: left;
+}
+
+.parfumFoto-3 {
+    margin-left: 0rem;
+    position: flex;
+    width: 13rem;
+    height: 13rem;
+    margin-left: 0%;
+    text-align: left;
+    float: left;
+}
+
+.parfumFoto-4 {
+    margin-left: 0rem;
+    position: flex;
+    width: 13rem;
+    height: 13rem;
+    margin-left: 0%;
+    text-align: left;
+    float: left;
+}
+
+.footer {
+    background: purple;
+    background-size: 50%;
+    height: 18rem;
+
+}
+
+.footer>ul {
+    margin: 0 15rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3rem;
+    height: 100%;
+    color: white;
+}
+
+.help {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem;
+}
+
+h5 {
+    font-size: 3.8rem;
+}
+
+.help>p {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+}
+
+.ks {
+    color: white;
+    border-bottom: white solid 1px;
+}
+
+.help>p>a {
+    color: white;
+}
+
+.help>p>a:hover {
+    border-bottom: white solid 1px;
+}
+
+.help>form {
+    display: flex;
+    position: relative;
+}
+
+.help>form>input {
+    padding: 1rem;
+    border: none;
+    border-radius: 2px 0 0 2px;
+    width: 100%;
+    position: relative;
+}
+
+.help>form>button {
+    position: absolute;
+    background: none;
+    right: 1vh;
+    border: none;
+    border-radius: 0 .2rem .2rem 0;
+}
+
+.help>form>button:hover {
+    cursor: pointer;
+}
+
+.help>form>button>i {
+    background: none;
+    padding: 1.1rem;
+}
+
+
+h6 {
+    font-size: 2rem;
+    color: black;
+}
+
+.footer-white>ul {
+    margin: 0 15rem 0 15rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    height: 100%;
+}
+
+.icon--1 {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem;
+    overflow: hidden;
+}
+
+.icon--1>ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.icon--2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.icon--2>p {
+    font-size: 2rem;
+    color: black;
+}
+
+.icon--2>form {
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+}
+
+.icon--2>form>input {
+    padding: 2rem;
+    border: #000000 1px solid;
+}
+
+.icon--2>form>button {
+    background: purple;
+    border: none;
+    padding: 2rem;
+}
+
+.icon--1>ul>li>img {
+    height: 3rem;
+    width: auto;
+    border-radius: 0.5rem;
+    object-fit: fill;
+}
+
+.icon--1>ul>li>a>img {
+    height: 4rem;
+    width: auto;
+    border-radius: 0.5rem;
+    object-fit: fill;
+}
+
+@media screen and (max-width: 45rem) {
+
+    .headerIMG {
+        padding-left: 1rem;
+    }
+
+    .headerText {
+        padding-right: 1rem;
+        font-size: .7rem;
+    }
+}
