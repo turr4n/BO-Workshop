@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+    scroll-behavior:smooth;
+}
+
+section{
+    margin-top:2rem;
+}
+header {
+    background: purple;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+}
+
+
+.headerText{
+    display: flex;
+    gap: 3rem;
+    padding-right: 8rem;
+    color: white;
+  }
+
+.headerText>a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.headerText>a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.headerText>a:hover {
+    text-decoration: underline;
+    color: gold;
+}
+
+.rondlogo{
+    width: 20rem;
+    height: 100%;
+  }
+
+.headerIMG {
+    padding-left: 8rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+
+.flamazing1 {
+    grid-column: 2/10;
+    grid-row: 2/10;
+    height: 100%;
+    width: 50%;
+}
+
+.producttext {
+    grid-column: 7/9;
+    grid-row: 3/5;
+    font-family: "Graphik";
+    color: purple;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.title {
+    align-items: end;
+}
+
+.rood {
+    grid-column: 7/10;
+    grid-row: 5/7;
+}
+
+.red {
+    width: 20%;
+    border-radius: 50%;
+    border: solid rgba(0, 0, 0, 0.521) 3px; 
+}
+
+.blauw {
+    grid-column: 8/10;
+    grid-row: 5/7;
+}
+
+.blue {
+    border-radius: 50%;
+    width: 30%;
+    border: solid black 4px; 
+}
+
+.paars {
+    grid-column: 9/10;
+    grid-row: 5/10;
+}
+
+.purple {
+    border-radius: 50%;
+    width: 60%;
+    border: solid rgba(0, 0, 0, 0.521) 3px; 
+}
+
+.Productbeschrijving {
+    margin-top: 2rem;
+    margin-left: 3rem;
+    font-size: 2rem;
+    font-family: "Graphik";
+    color: purple;
+    font-weight:500;
+    
+}
+
+
+@media screen and (max-width: 45rem) {
+    .headerIMG { 
+        padding-left: 1rem;
+    }
+
+    .headerText {
+        padding-right: 1rem;
+        font-size: .7rem;
+    }
+
+    .BigHeadingText {
+        font-size: 5rem;
+        grid-column: 1/11;
+        grid-row: 1/1;
+    }
+
+    .flamazing1 {
+        width: 50%;
+        height: 50%;
+    }
+
+    .producttext {
+        grid-column: 2/10;
+        grid-row: 8/10;
+        font-size: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 45rem) {
+
+    .headerIMG {
+        padding-left: 1rem;
+    }
+
+    .headerText {
+        padding-right: 1rem;
+        font-size: .7rem;
+    }
+}
+
+.footer {
+    background: purple;
+    background-size: 50%;
+    height: 18rem;
+
+}
+
+.footertext1 {
+    color:white;
+    margin-left: 2rem;
+}
+
+.footertext2 {
+    color:white;
+    text-align: right;
+    margin-right: 2rem;
+}
+
+@media screen and (max-width: 50rem) {
+
+   .footer {
+    width: 100vh;
+   }
+
+   .footertext1 {
+    margin-left: 2rem;
+    font-size: 3rem;
+   }
+
+   .footertext2 {
+    margin-right: 2rem;
+    font-size: 3rem;
+    text-align: right;
+   }
+}

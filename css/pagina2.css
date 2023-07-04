@@ -1,12 +1,11 @@
-*,
-::before,
-::after {
+*, ::before, ::after{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    margin-top: 1rem;
 }
 
-html {
+html{
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
@@ -19,12 +18,13 @@ header {
     height: 10rem;
 }
 
-.headerText {
+
+.headerText{
     display: flex;
     gap: 3rem;
     padding-right: 8rem;
     color: white;
-}
+  }
 
 .headerText>a:link {
     text-decoration: none;
@@ -41,51 +41,25 @@ header {
     color: gold;
 }
 
-.rondlogo {
+.rondlogo{
     width: 20rem;
     height: 100%;
-}
+  }
 
 .headerIMG {
     padding-left: 8rem;
 }
 
-body {
+body{
     font-family: sans-serif;
-    font-size: 2rem;
-    background: #eee;
-    padding: none;
-    overflow: hidden;
+    font-size: 2rem; 
+    background: #eee;   
     mix-blend-mode: darken;
 }
 
-body::before,
-body::after {
-    content: "";
-    height: 200%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation-name: away;
-    animation-duration: 1.2s;
-    transform-origin: right;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0.650, 0.050, 0.360, 1);
-}
-
-body::before {
-    background: purple;
-    animation-delay: .3s;
-    z-index: 1;
-}
-
-body::after {
-    background: pink;
-    z-index: 1;
-}
-
-main {
+main{
+    padding: 8rem;
+    min-height: 100vh;
     width: 100%;
     opacity: 0;
     animation-fill-mode: forwards;
@@ -94,77 +68,135 @@ main {
     animation-delay: 1s
 }
 
-.inputs {
+
+
+.inputs{
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 4rem;
     width: 100%;
     margin-bottom: 4rem;
-    flex-wrap: wrap;
+    flex-wrap: wrap ;
 }
 
-.inputs>div {
+.inputs > div{
     width: 40rem;
     display: flex;
     align-items: center;
 }
 
 
-.filter {
+.filter{
     width: 5rem;
     height: 5rem;
     margin-right: 2rem;
-    background: purple;
+    background: #eee;
     -webkit-appearance: none;
     appearance: none;
-    border-radius: 2rem;
+    border-radius: 5px;
     box-shadow: inset 0 0 0.5rem 0 rgba(0, 0, 0, 0.2);
 }
 
-.label:hover {
+.label:hover{
     cursor: pointer;
 }
 
-.filter:hover {
+.filter:hover{
     cursor: pointer;
 }
 
-.filter:checked {
+.filter:checked{
     background: pink;
 }
 
-.filter:checked~.label {
+.filter:checked ~ .label{
     text-decoration: underline;
 }
 
-.perfumes {
-    width: 97%;
+.games{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     align-items: center;
 }
 
-.perfume {
+.game{
     list-style: none;
-    width: 30rem;
+    width: 25rem;
     height: 30rem;
     transition: .2s;
     flex-grow: 1;
 }
 
-.perfume:hover {
-    transform: scale(1.2) translateY(-0.7rem);
+.game:hover{
+    transform: scale(1.02) translateY(-0.7rem);
     cursor: pointer;
 }
 
-.perfume>img {
+.game > img{
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
+.footer {
+    grid-column: 5/16;
+    grid-row: 18/21;
+    background-color: #0000a4;
+    height: 8rem;
+    padding-left: 4rem;
+    padding-top: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: "Graphik";
+    font-size: 2rem;
+}
+
+.ma {
+    text-align: right;
+    padding-right: 2%;
+}
+
+@keyframes away {
+    from{
+        transform: scaleX(1);
+    }
+    to{
+        transform: scaleX(0);
+    }
+}
+
+@keyframes popup {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 45rem) {
+
+    .headerIMG {
+        padding-left: 1rem;
+    }
+
+    .headerText {
+        padding-right: 1rem;
+        font-size: .7rem;
+    }
+}
+
+.footer {
+    background: purple;
+    background-size: 50%;
+    height: 18rem;
+
+}
 
 .footertext1 {
     color:white;
@@ -177,78 +209,20 @@ main {
     margin-right: 2rem;
 }
 
-@keyframes away {
-    from {
-        transform: scaleX(1);
-    }
-
-    to {
-        transform: scaleX(0);
-    }
-}
-
-@keyframes popup {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
 @media screen and (max-width: 50rem) {
-    .footer {
-        width: 100vh;
-       }
-    
-       .footertext1 {
-        margin-left: 2rem;
-        font-size: 3rem;
-       }
-    
-       .footertext2 {
-        margin-right: 2rem;
-        font-size: 3rem;
-        text-align: right;
-       }
-}
 
-@media screen and (max-width: 62.5rem) {
-    .product-list {
-      display: grid;
-      grid-template-columns: 50% 50%;
-      list-style: none;
-    }
-  
-    .headertext>h1 {
-      font-size: 1.3rem;
-    }
-  
-    .headerIMG>img {
-      width: 10rem;
-    }
-  
-    .hero-section {
-      height: 30rem;
-    }
-  
-    .pictureinfo {
-      gap: 2rem;
-    }
-  
-    header>h1 {
-      font-size: 1rem;
-    }
+   .footer {
+    width: 100vh;
+   }
 
-    .headerText {
-        padding-right: 1rem;
-        font-size: .7rem;
-    }
+   .footertext1 {
+    margin-left: 2rem;
+    font-size: 3rem;
+   }
 
-    .rondlogo {
-        width: 70%;
-        height: 50%;
-    }
-
+   .footertext2 {
+    margin-right: 2rem;
+    font-size: 3rem;
+    text-align: right;
+   }
 }

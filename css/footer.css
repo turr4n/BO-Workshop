@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "montereyflf", "montereyflf", montereyflf;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+.footer {
+    background: purple;
+    background-size: 50%;
+    height: 18rem;
+
+}
+
+.footertext1 {
+    color:white;
+    margin-left: 2rem;
+}
+
+.footertext2 {
+    color:white;
+    text-align: right;
+    margin-right: 2rem;
+}
+
+@media screen and (max-width: 50rem) {
+
+   .footer {
+    width: 100vh;
+   }
+
+   .footertext1 {
+    margin-left: 2rem;
+    font-size: 3rem;
+   }
+
+   .footertext2 {
+    margin-right: 2rem;
+    font-size: 3rem;
+    text-align: right;
+   }
+}
